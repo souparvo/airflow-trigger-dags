@@ -1,0 +1,9 @@
+
+airflow_home: /path/to/airflow # same as $AIRFLOW_HOME
+airflow_bin: /path/to/airflow_bin # if airflow installed on virtualenv on /path/to/airflow_venv, then should be /path/to/airflow_venv/bin/airflow
+
+dag_id: dag_id
+input_date: '2020-12-11T16:05:00'
+increment: 3600 # in seconds
+quantity: 4 # increments of run
+

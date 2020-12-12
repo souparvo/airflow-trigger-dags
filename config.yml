@@ -1,0 +1,14 @@
+
+airflow_home: /path/to/airflow # same as $AIRFLOW_HOME
+airflow_bin: /path/to/airflow_bin # if airflow installed on virtualenv on /path/to/airflow_venv, then should be /path/to/airflow_venv/bin/airflow
+
+dags:
+  - dag_id: dag_id
+    run_id_suffix: recover
+    exec_dates:
+      - '2020-11-11T16:05:00'
+      - '2020-11-12T18:05:00'
+  - dag_id: other_dag_id
+    run_id_suffix: new
+    exec_dates:
+      - '2020-12-12T16:05:00'
